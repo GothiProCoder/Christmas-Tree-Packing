@@ -91,7 +91,7 @@ class RunnerConfig:
     # n > hybrid_max_n uses lattice
     
     # === Checkpointing ===
-    checkpoint_interval: int = 10
+    checkpoint_interval: int = 1  # Save after every config (safe for Colab)
     checkpoint_dir: str = "checkpoints"
     
     # === Output ===

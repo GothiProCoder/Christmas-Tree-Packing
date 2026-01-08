@@ -35,9 +35,18 @@ Strategy:
 Target Score: < 69.0 (top-tier)
 """
 
+# =============================================================================
+# FIX FOR LINUX/COLAB: Prevent OpenMP + fork() crash
+# MUST be set BEFORE importing numpy/numba
+# =============================================================================
+import os
+os.environ['OMP_NUM_THREADS'] = '1'
+os.environ['OPENBLAS_NUM_THREADS'] = '1' 
+os.environ['MKL_NUM_THREADS'] = '1'
+os.environ['NUMBA_NUM_THREADS'] = '1'
+
 import argparse
 import sys
-import os
 import time
 from datetime import datetime
 

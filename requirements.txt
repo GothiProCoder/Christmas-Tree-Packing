@@ -1,0 +1,26 @@
+# Santa 2025 - Christmas Tree Packing Challenge
+# Core dependencies
+
+# Numerical computing
+numpy>=1.24.0
+
+# JIT compilation for speed
+numba>=0.58.0
+
+# Scientific computing & optimization
+scipy>=1.11.0
+
+# Geometry operations (concave polygon handling)
+shapely>=2.0.0
+
+# CMA-ES evolutionary strategy
+cma>=3.3.0
+
+# Progress bars
+tqdm>=4.66.0
+
+# Visualization
+matplotlib>=3.8.0
+
+# Optional: faster polygon operations
+# pygeos>=0.14.0
